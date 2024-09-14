@@ -1,0 +1,7 @@
+<h1>Categories</h1>
+<table>
+  <tr *ngFor="let category of categories">
+    <td>{{ category.name }}</td>
+    <td><button (click)="deleteCategory(category.id)">Delete</button></td>
+  </tr>
+</table>
